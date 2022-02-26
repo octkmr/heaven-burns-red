@@ -16,7 +16,6 @@ return new class extends Migration
         Schema::create('elements', function (Blueprint $table) {
             $table->id();
             $table->string('name', 8)->comment('属性');
-            $table->timestamps();
         });
     }
 

@@ -16,7 +16,6 @@ return new class extends Migration
         Schema::create('attacks', function (Blueprint $table) {
             $table->id();
             $table->string('name', 8)->comment('攻撃タイプ');
-            $table->timestamps();
         });
     }
 

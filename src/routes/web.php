@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CharacterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +17,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('character', [CharacterController::class, 'index'])->name('character.index');
+Route::get('character/{character}', [CharacterController::class, 'detail'])->name('character.detail');

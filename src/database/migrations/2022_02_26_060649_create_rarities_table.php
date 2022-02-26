@@ -16,7 +16,6 @@ return new class extends Migration
         Schema::create('rarities', function (Blueprint $table) {
             $table->id();
             $table->string('name', 8)->comment('レアリティ');
-            $table->timestamps();
         });
     }
 
