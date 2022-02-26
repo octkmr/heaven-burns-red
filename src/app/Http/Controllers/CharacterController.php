@@ -3,11 +3,15 @@
 namespace App\Http\Controllers;
 
 use App\Models\Character;
-use Illuminate\Http\Request;
+use Illuminate\View\View;
 
 class CharacterController extends Controller
 {
-    public function index(Character $character)
+    /**
+     * @param Character $character
+     * @return View
+     */
+    public function index(Character $character): View
     {
         $characters = $character->orderBy('id')->get();
         // point
@@ -24,7 +28,11 @@ class CharacterController extends Controller
         return view('character.index', $param);
     }
 
-    public function detail(Character $character)
+    /**
+     * @param Character $character
+     * @return View
+     */
+    public function detail(Character $character): View
     {
         $styles = $character->styles()->get();
         $param = [
