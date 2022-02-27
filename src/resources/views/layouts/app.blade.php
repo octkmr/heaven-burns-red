@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>ヘブバン - @yield('title')</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 </head>
 <body>
 <div class="container">

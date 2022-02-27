@@ -1,0 +1,33 @@
+.button {
+    width: 800px;
+}
+.gatcha-button {
+    font-size: 1.3rem;
+    margin: 30px 0 0;
+    display: inline-block;
+    width: 220px;
+    height: 45px;
+    line-height: 45px;
+    font-weight: bold;
+    border-radius: 3px;
+    background-color: #f9cf48;
+    transition: all 0.4s ease;
+    box-shadow: 0 0 6px rgb(0 0 0 / 20%);
+    color: #404040;
+    background-color: #f9cf48;
+    border: 1px solid #fef6dc;
+    border-bottom: solid 2px #d4a307;
+    text-decoration: none;
+}
+body {
+    width:1000px;
+}
+.ss {
+    line-height: 150px;
+    background-color: greenyellow;
+}
+
+.s {
+    line-height: 100px;
+    background-color: darkorange;
+}

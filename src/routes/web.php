@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\GatchaController;
+use App\Http\Controllers\StrengthCalculator;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CharacterController;
 
@@ -20,3 +22,6 @@ Route::get('/', function () {
 
 Route::get('character', [CharacterController::class, 'index'])->name('character.index');
 Route::get('character/{character}', [CharacterController::class, 'detail'])->name('character.detail');
+
+Route::get('gatcha', [GatchaController::class, 'index'])->name('gatcha.index');
+Route::get('gatcha/result', [GatchaController::class, 'result'])->name('gatcha.result');
